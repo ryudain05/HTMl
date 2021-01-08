@@ -1,8 +1,17 @@
 body {
   margin:0;
+  border-bottom:1px solid gray;
+  color:#F592BB;
+  <input type="button" value="night" onclick="
+  document.querySelector('body').style.backgroundColor = 'black';
+  document.querySelector('body').style.color = '#F4B6D9';
+">
+<input type="button" value="day" onclick="
+  document.querySelector('body').style.backgroundColor = 'white';
+">
 }
 a {
-  color:black;
+  color:#DC6089	;
   text-decoration: none;
   }
 h1 {
@@ -12,6 +21,9 @@ h1 {
    border-bottom:1px solid gray;
    margin:0;
    padding:20px;
+}
+h2 {
+  text-shadow:3px 2px #558abb;
 }
 ul {
   border-right:1px solid gray;
@@ -38,5 +50,8 @@ ul {
       }
       h1 {
       border-bottom:none;
+      }
+      body{
+        border-bottom:none;
       }
   }
